@@ -13,6 +13,7 @@ func main() {
 		HTTPMethod: "GET",
 		Path:       "/Fakepath",
 	}
+
 	response, err := golambdainvoke.Run(8001, lambdaRequest)
 	if err != nil {
 		panic(err)
